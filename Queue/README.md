@@ -179,6 +179,6 @@ int dequeue() {
 
    return data;
 }
-```
+``` 
 ---
 For a complete Queue program in C programming language. Please check out above code files.
