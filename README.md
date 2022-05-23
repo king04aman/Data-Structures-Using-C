@@ -1,2 +1,2 @@
-# Data-Structures-And-Algorithm
+# Data-Structures
 Will be updated soon... 
