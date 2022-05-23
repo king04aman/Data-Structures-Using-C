@@ -7,7 +7,7 @@ Author : Aman Kumar
 #include<stdlib.h>
 #define SIZE 5
 
-//Global Variables 
+//Global Variables
 int top = -1;
 int arr[SIZE],i;
 
@@ -49,7 +49,7 @@ void peek()
 void search(int item)
 {
     int flag = 0;
-    for(i=0;i<SIZE;i++)
+    for(i=0;i<=top;i++)
     {
         if(arr[i] == item)
         {
@@ -64,7 +64,7 @@ void search(int item)
 void min()
 {
     int x = arr[0];
-    for(i=0;i<SIZE;i++)
+    for(i=0;i<=top;i++)
     {
         if(x > arr[i])
             x = arr[i];
@@ -76,7 +76,7 @@ void min()
 void max()
 {
     int x = arr[0];
-    for(i=0;i<SIZE;i++)
+    for(i=0;i<=top;i++)
     {
         if(x < arr[i])
             x = arr[i];
@@ -88,7 +88,7 @@ void max()
 void display()
 {
     int i;
-    for(i=0;i<SIZE;i++)
+    for(i=0;i<=top;i++)
         printf("%d\n",arr[i]);
 }
 
