@@ -47,13 +47,16 @@ void peek()
 // Find element in stack
 void search(int item)
 {
+    int flag = 0;
     for(i=0;i<SIZE;i++)
     {
         if(arr[i] == item)
         {
-            printf("Element(%d) found at %dth position in stack.\n",item,i+1);
+            flag = 1;
+            break;
         }
     }
+    (flag == 1)?printf("Element(%d) found at %dth position in stack.\n",item,i+1):printf("Did not find element (%d) in the stack.\n",item);
 }
 
 //Finding minimum element of stack.
